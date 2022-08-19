@@ -1,0 +1,12 @@
+venv/
+.code/
+__pycache__/
+.cache/
+.pytest_cache/
+dist/
+build/
+*.spec
+*.pyc
+.DS_Store
+tmp/
+.vscode/
