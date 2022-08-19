@@ -18,12 +18,9 @@ class ConfigureEnvVariables:
 
     def configureProxy():
         needProxyConf = input(
-            "\nIf you are behind a proxy, indicate the URL of your proxy.\n By default it will be the proxy of Nexus (press enter to choose by default) \n-> ")
+            "\nIf you are behind a proxy, indicate the URL of your proxy (press enter to skip). \n-> ")
 
-        if not needProxyConf:
-            InitialConfiguration.setVariableConf("HTTP_PROXY",
-                                               DefaultConfig.getVariableValue("HTTP_PROXY"))
-        else:
+        if needProxyConf:
             InitialConfiguration.setVariableConf("HTTP_PROXY", needProxyConf)
 
     def configureCert():

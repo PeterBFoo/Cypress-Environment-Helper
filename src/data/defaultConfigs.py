@@ -5,7 +5,6 @@ DEFAULT_CONFIGURATIONS = {"CYPRESS_RUN_BINARY_MAC": "/Applications/Cypress.app/C
             "\\Downloads\\Cypress.exe", "CYPRESS_INSTALL_BINARY": '"0 npm install"',
             "CYPRESS_CACHE_FOLDER_MAC": OSinteract.getCurrentDirectory() + "/.cache",
             "CYPRESS_CACHE_FOLDER_WIN": OSinteract.getCurrentDirectory() + "\\.cache",
-            "HTTP_PROXY": "https://nexus.riu.net/repository/",
             "PATH_ENVIRONMENT_FILE_UBUNTU": "/etc/environment"}
 
 VALID_OS_BASH = ["darwin", "ubuntu"]
